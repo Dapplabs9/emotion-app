@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <title>Emotion App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+</head>
+<body style="background-color: rgb(12, 152, 245); color: white;">
+    <center>
+        <h1 id="heading">Emotion to Emoji App
+            <br>
+            <span>&#128522;</span> 
+            <span>&#128512;</span> 
+            <span>&#128532;</span> 
+            <span>&#128546;</span> 
+            <span>&#128545;</span> 
+            <span>&#128548;</span>
+        </h1>
+        <br>
+        <h2>Take Your Selfie To Generate a Emoji</h2>
+        <br>
+        <p style="font-size: 22;">
+            <b style="color: yellow;">Are you Happy</b>
+            <br>
+            <b style="color: black;">Are you Sad</h3>
+            <br>
+            <b style="color: red; margin-top: 0px;">Are you Angry</h3>
+        </p>
+        <div class="col-md-4 col-sm-11 col-xs-11">
+            <h4>Webcam view</h4>
+            <div id="camera"></div>
+            <button onclick="capture()">Capture Image</button>
+        </div>
+        <div class="col-md-4 col-sm-11 col-xs-11">
+            <h4>Prediction-1</h4>
+            <br>
+            <h3 id="predict_1"></h3>
+            <br>
+            <h4>Prediction-1</h4>
+            <br>
+            <h3 id="predict2"></h3>
+        </div>
+        <div class="col-md-4 col-sm-11 col-xs-11">
+            <h4>Snapshot</h4>
+            <div id="result"></div>
+            <button onclick="predict()">Predict Emotion</button>
+        </div>
+    </center>
+    <script src="script.js"></script>
+</body>
+</html>

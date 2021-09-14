@@ -1,0 +1,8 @@
+#heading{
+    background-color: orange;
+    width: 30%;
+    border-radius: 10px;
+}
+body{
+    border: 10px solid rgb(6, 103, 167);
+}
